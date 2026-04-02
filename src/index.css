@@ -1,0 +1,32 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0e0f11;
+  --surface: #16181c;
+  --surface2: #1e2126;
+  --border: #2a2d34;
+  --border2: #383c45;
+  --accent: #e8c547;
+  --accent2: #f0d96a;
+  --green: #4ade80;
+  --red: #f87171;
+  --muted: #6b7280;
+  --text: #e2e4e8;
+  --text2: #a0a6b1;
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
